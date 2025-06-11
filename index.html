@@ -76,6 +76,25 @@
       object-fit: cover;
       border-radius: 30px;
     }
+    .exp-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #00b7ff;
+      color: #121212;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .experience-section{
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #1f1f1f;
+      border-radius: 8px;
+      border: 1px solid #2a2a2a;
+    }   
     section {
       max-width: 1000px;
       margin: 4rem auto;
@@ -128,7 +147,7 @@
       <h1 style="font-size: 2.5rem;">Hello,</h1>
       <h1 style="font-size: 2.5rem;"><strong>Akhila here! 👋</strong></h1>
       <p>I’m a Data Analyst turned Data Engineer with a love for data science — and 5+ years of experience building intelligent, secure, and scalable data systems. My work bridges deep analytics, robust cloud infrastructure, and predictive modeling to drive insights and real-world impact.</p>
-      <p>Whether it’s migrating terabytes of legacy data into AWS, designing ETL pipelines with PySpark, or visualizing trends with Power BI — I thrive on turning complexity into clarity. My projects have supported healthcare optimization, operational analytics, and advanced reporting under HIPAA, CMS, and HEDIS frameworks.</p>
+      <p>Whether it’s migrating terabytes of legacy data into AWS, designing ETL pipelines with PySpark, or visualizing trends with Power BI — I thrive on turning complexity into clarity. My projects have supported healthcare optimization, operational analytics, and advanced reporting.</p>
       <p>Beyond code, I care about outcomes. I’ve collaborated with analysts, clinicians, and stakeholders to define KPIs, monitor metrics, and empower better decisions with data.</p>
       <p>Data pipelines. Statistical rigor. Business value. I connect the dots. 📈</p>
       <a href="/resume.pdf" download style="display:inline-block;margin-top:1.5rem;padding:0.75rem 1.5rem;background:#00b7ff;color:#121212;border-radius:8px;text-decoration:none;font-weight:600;">Download Resume</a>
@@ -140,6 +159,12 @@
     </div>
       
   </section>
+  <script>
+    function toggleExperience() {
+      var exp = document.getElementById("experience");
+      exp.style.display = exp.style.display === "none" ? "block" : "none";
+    }
+  </script>
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-card">
