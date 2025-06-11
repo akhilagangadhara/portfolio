@@ -4,122 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akhila Gangadhara | Data & AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff;
-      color: #1a1a1a;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
       line-height: 1.6;
     }
-    header {
-      background: #f7f7f7;
-      padding: 4rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    nav {
+      background: #1f1f1f;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    header h1 {
-      margin: 0;
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 10%;
+      background-color: #121212;
+    }
+    .hero-content {
+      max-width: 600px;
+    }
+    .hero h1 {
       font-size: 3rem;
-      color: #222;
+      font-weight: 700;
     }
-    header p {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      color: #666;
+    .hero h1 span {
+      color: #ffffff;
     }
-    .section {
+    .hero p {
+      margin: 1.5rem 0;
+      color: #cccccc;
+    }
+    .hero img {
+      border-radius: 16px;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+    section {
       max-width: 1000px;
       margin: 4rem auto;
       padding: 0 2rem;
     }
-    .section h2 {
+    section h2 {
       font-size: 2rem;
-      border-bottom: 2px solid #eee;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #333;
       padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
     }
-    .project {
-      border: 1px solid #ddd;
+    .project-card {
+      background: #1f1f1f;
       padding: 1.5rem;
-      margin-bottom: 2rem;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-      transition: transform 0.2s ease-in-out;
+      margin-bottom: 2rem;
+      border: 1px solid #2a2a2a;
     }
-    .project:hover {
-      transform: scale(1.02);
+    .project-card h3 {
+      margin-bottom: 0.5rem;
     }
-    .project h3 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #1a1a1a;
+    .project-card p {
+      margin: 0.3rem 0;
     }
-    .project p {
-      margin: 0.4rem 0;
-    }
-    a {
-      color: #007acc;
+    .contact a {
+      color: #00b7ff;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin-right: 1rem;
     }
     footer {
-      background: #f7f7f7;
       text-align: center;
       padding: 2rem;
-      color: #444;
-      font-size: 0.9rem;
-      margin-top: 4rem;
+      background: #1f1f1f;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Akhila Gangadhara</h1>
-    <p>Data Analyst | AI Enthusiast | Cloud Practitioner</p>
-  </header>
+  <nav>
+    <strong>Akhila Gangadhara</strong>
+    <div>
+      <a href="#projects">My Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>I’m a Data & AI professional with a Master's in Applied Statistics and Analytics. My passion lies in turning raw data into actionable insights using Python, R, SQL, and cloud platforms like AWS. I’ve built end-to-end machine learning models, full-stack systems, and cloud-native solutions to solve real-world problems.</p>
+  <section class="hero">
+    </p>
+      <a href="/resume.pdf" download style="display:inline-block;margin-top:1rem;padding:0.75rem 1.5rem;background:#00b7ff;color:#121212;border-radius:8px;text-decoration:none;font-weight:600;">Download Resume</a>
+    </div>
+    <img src="https://via.placeholder.com/300x400.png?text=Your+Photo" alt="Akhila Profile" />
   </section>
 
-  <section class="section" id="projects">
+  <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project">
-      <h3>🏀 Analyzing Cost Contributors in Patient Care </h3>
-      <p><strong>Tech:</strong> R, RStudio, dplyr, ggplot2, plotly, caret, ranger, gbm, K-Means, ANOVA</p>
-      <p>Analyzed 55K+ patient records to identify key cost contributors; created interactive dashboards (ggplot2, plotly) and conducted ANOVA to compare billing differences across clinical groups.Built predictive models including Regression, Random Forest (R² = 0.94), and Gradient Boosting using caret and ranger; applied feature engineering and K-Means clustering for patient segmentation. Developed a reproducible pipeline to clean and standardize EHR-like datasets (e.g., insurance, test results, hospitalization data); engineered variables (Billing.Per.Day, Days.Hospitalized) to support analytics and modeling.</p>
-      <p><a href="#">GitHub Repo</a></p>
+    <div class="project-card">
+      <h3>🏥 Patient Billing Analytics</h3>
+      <p><strong>Tools:</strong> R, ggplot2, caret</p>
+      <p>Uncovered key billing cost drivers through EDA, regression, and clustering on 55K+ records.</p>
     </div>
-
-    <div class="project">
-      <h3>🏥 Healthcare Billing Analysis</h3>
-      <p><strong>Tech:</strong> R, ggplot2, caret</p>
-      <p>Performed EDA, regression modeling, and clustering on patient billing data to uncover cost drivers and forecast billing with 28% improved accuracy.</p>
-      <p><a href="#">GitHub Repo</a></p>
+    <div class="project-card">
+      <h3>📚 AWS Book Management App</h3>
+      <p><strong>Tools:</strong> AWS EC2, RDS, Spring Boot, React</p>
+      <p>Created a secure CRUD web app on AWS with monitoring and scalable deployment setup.</p>
     </div>
-
-    <div class="project">
-      <h3>📚 Cloud-Based Book Management System</h3>
-      <p><strong>Tech:</strong> AWS EC2, RDS, Spring Boot, React</p>
-      <p>Designed a CRUD web app deployed on AWS with EC2 and RDS. Enabled performance monitoring with CloudWatch and secured access with IAM and WAF.</p>
-      <p><a href="#">GitHub Repo</a></p>
+    <div class="project-card">
+      <h3>🏀 NBA Shot Prediction</h3>
+      <p><strong>Tools:</strong> Python, Scikit-learn, Matplotlib</p>
+      <p>Built ML models to predict shot outcomes using 218K+ data points, achieving 82% accuracy.</p>
     </div>
-
   </section>
 
-  <section class="section" id="contact">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:akhilagangadhara7@email.com">akhila@email.com</a></p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/akhila-gangadhara" target="_blank">linkedin.com/in/akhilagangadhara</a></p>
+    <p class="contact">
+      <a href="mailto:akhila@email.com">Email</a>
+      <a href="https://linkedin.com/in/akhilagangadhara" target="_blank">LinkedIn</a>
+      <a href="https://github.com/akhila" target="_blank">GitHub</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Akhila Gangadhara • Portfolio built from scratch using HTML & CSS</p>
+    <p>&copy; 2025 Akhila Gangadhara • Inspired by Sanjeev Sriram’s portfolio • Built with HTML & CSS</p>
   </footer>
 </body>
 </html>
