@@ -35,15 +35,17 @@
     }
     .hero {
       display: flex;
-      justify-content: space-between;
+      flex-direction: row;
       align-items: flex-start;
-      padding: 2rem 3rem;
-      gap: 2rem;
+      justify-content: space-between;
+      background-color: #121212;
       min-height: 100vh;
+      gap: 3rem;
+      padding: 0;
+      margin-left: 4cm;
     }
     .hero-content {
-      flex: 1;
-      max-width: 640px;
+      max-width: 680px;
     }
     .hero h1 {
       font-size: 2.5rem;
@@ -57,8 +59,8 @@
       flex-shrink: 0;
     }
     .hero-image img {
-      width: 420px;
-      height: auto;
+      width: 460px;
+      height: 700px;
       object-fit: cover;
       border-radius: 30px;
     }
@@ -104,6 +106,9 @@
     }
     .project-card h3 {
       margin-bottom: 0.5rem;
+    }
+    .project-card p, .project-card ul {
+      color: #ccc;
     }
     .contact a {
       color: #00b7ff;
@@ -173,16 +178,57 @@
     </div>
   </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>🏥 Patient Billing Analytics</h3>
+      <p><strong>Tools:</strong> R, RStudio, dplyr, ggplot2, plotly, caret, ranger, gbm, K-Means, ANOVA</p>
+      <ul>
+        <li>Analyzed 55K+ patient records to identify key cost contributors.</li>
+        <li>Built models using Regression, Random Forest (R² = 0.94), and Gradient Boosting.</li>
+        <li>Created dashboards and conducted ANOVA across clinical groups.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>📚 Cloud-Based Book Management System</h3>
+      <p><strong>Technologies: </strong> AWS (RDS, EC2, S3, ELB, WAF, CloudWatch), MySQL, Spring Boot, ReactJS</p>
+      <ul>
+        <li>Deployed a book catalog web app with EC2 microservices and secure IAM roles.</li>
+        <li>Used ELB, S3, CloudWatch for scaling, monitoring, and storage.</li>
+        <li>Resolved backend CORS and sync issues through logs and configs.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>🏏 IPL Player History & Auction Analysis</h3>
+      <p><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Web Scraping</p>
+      <ul>
+        <li>Scraped & cleaned player data to evaluate auction pricing and performance.</li>
+        <li>Built visualizations showing team bidding trends and KPI effectiveness.</li>
+        <li>Identified undervalued players and outliers using statistical insights.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="contact">
+      <a href="mailto:akhilagangadhara7@email.com">Email</a>
+      <a href="https://linkedin.com/in/akhilagangadhara" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Akhila Gangadhara • Built with HTML & CSS</p>
+  </footer>
+
   <script>
     function toggleExperience() {
       const exp = document.getElementById("experience");
       exp.style.display = exp.style.display === "block" ? "none" : "block";
     }
   </script>
-
-  <!-- You can add Projects & Contact sections here -->
-  <footer>
-    <p>&copy; 2025 Akhila Gangadhara • Built with HTML & CSS</p>
-  </footer>
 </body>
 </html>
