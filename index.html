@@ -190,39 +190,61 @@
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- 🔵 BEGIN: Updated Project Section "What I've Built" -->
+  <section id="projects" style="padding: 4rem 2rem; background: #121212; color: #fff;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">What I've Built</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1200px; margin: 0 auto;">
 
-    <div class="project-card">
-      <h3>🏥 Patient Billing Analytics</h3>
-      <p><strong>Tools:</strong> R, RStudio, dplyr, ggplot2, plotly, caret, ranger, gbm, K-Means, ANOVA</p>
-      <ul>
-        <li>Analyzed 55K+ patient records to identify key cost contributors.</li>
-        <li>Built models using Regression, Random Forest (R² = 0.94), and Gradient Boosting.</li>
-        <li>Created dashboards and conducted ANOVA across clinical groups.</li>
-      </ul>
-    </div>
+      <!-- Project 1: Patient Billing -->
+      <div style="background: #1f1f1f; border-radius: 12px; width: 320px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+        <img src="assets/patient-billing.png" alt="Patient Billing" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin-top: 1rem;">🏥 Patient Billing Analytics</h3>
+        <p style="color: #ccc;">Analyzed 55K+ patient records to identify cost drivers and built regression models to forecast billing. Created dashboards and ran ANOVA across clinical groups.</p>
+        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <span class="tag">R</span><span class="tag">Regression</span><span class="tag">ANOVA</span>
+          <span class="tag">Random Forest</span><span class="tag">Healthcare</span>
+        </div>
+      </div>
 
-    <div class="project-card">
-      <h3>📚 Cloud-Based Book Management System</h3>
-      <p><strong>Technologies: </strong> AWS (RDS, EC2, S3, ELB, WAF, CloudWatch), MySQL, Spring Boot, ReactJS</p>
-      <ul>
-        <li>Deployed a book catalog web app with EC2 microservices and secure IAM roles.</li>
-        <li>Used ELB, S3, CloudWatch for scaling, monitoring, and storage.</li>
-        <li>Resolved backend CORS and sync issues through logs and configs.</li>
-      </ul>
-    </div>
+      <!-- Project 2: Cloud Book -->
+      <div style="background: #1f1f1f; border-radius: 12px; width: 320px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+        <img src="assets/cloud-book.png" alt="Cloud Book" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin-top: 1rem;">📚 Cloud-Based Book Management</h3>
+        <p style="color: #ccc;">Built a scalable cloud-native book catalog app using AWS RDS, EC2, and Spring Boot. Deployed with IAM roles and monitored via CloudWatch.</p>
+        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <span class="tag">AWS</span><span class="tag">Spring Boot</span><span class="tag">MySQL</span>
+          <span class="tag">React</span><span class="tag">DevOps</span>
+        </div>
+      </div>
 
-    <div class="project-card">
-      <h3>🏏 IPL Player History & Auction Analysis</h3>
-      <p><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Web Scraping</p>
-      <ul>
-        <li>Scraped & cleaned player data to evaluate auction pricing and performance.</li>
-        <li>Built visualizations showing team bidding trends and KPI effectiveness.</li>
-        <li>Identified undervalued players and outliers using statistical insights.</li>
-      </ul>
+      <!-- Project 3: IPL Analysis -->
+      <div style="background: #1f1f1f; border-radius: 12px; width: 320px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+        <img src="assets/ipl-analysis.png" alt="IPL Analysis" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin-top: 1rem;">🏏 IPL Player History & Auction</h3>
+        <p style="color: #ccc;">Scraped & cleaned IPL player data to analyze auction value and performance metrics. Built interactive visuals and identified undervalued players using stats.</p>
+        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Web Scraping</span>
+          <span class="tag">Matplotlib</span><span class="tag">Auction Data</span>
+        </div>
+      </div>
+
     </div>
   </section>
+  <!-- 🔵 END: Updated Project Section -->
+
+  <!-- 🔵 BEGIN: Skill Tag Styling -->
+  <style>
+    .tag {
+      background: #2a2a2a;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      font-size: 0.75rem;
+      color: #eee;
+      white-space: nowrap;
+    }
+  </style>
+  <!-- 🔵 END: Skill Tag Styling -->
+
 
   <section id="contact">
     <h2>Contact</h2>
