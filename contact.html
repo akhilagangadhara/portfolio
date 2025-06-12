@@ -4,27 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Akhila Gangadhara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       background: #121212;
       color: #f0f0f0;
       font-family: 'Inter', sans-serif;
-      padding: 2rem;
       line-height: 1.6;
     }
-    h1 {
-      color: #00b7ff;
+    nav {
+      background: #1f1f1f;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    a {
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+    }
+    main {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00b7ff;
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    .contact-info a {
       color: #00b7ff;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Let's Connect!</h1>
-  <p>Email: <a href="mailto:akhilagangadhara7@email.com">akhilagangadhara7@email.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/akhilagangadhara" target="_blank">linkedin.com/in/akhilagangadhara</a></p>
-  <p>GitHub: <a href="https://github.com/akhila" target="_blank">github.com/akhila</a></p>
+
+  <nav>
+    <a href="index.html"><strong>Akhila Gangadhara</strong></a>
+    <div>
+      <a href="index.html#projects">My Work</a>
+      <a href="https://drive.google.com/file/d/YOUR_RESUME_ID/view" target="_blank">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Let's Connect!</h1>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:akhilagangadhara7@email.com">akhilagangadhara7@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/akhilagangadhara" target="_blank">linkedin.com/in/akhilagangadhara</a></p>
+      <p>GitHub: <a href="https://github.com/akhila" target="_blank">github.com/akhila</a></p>
+    </div>
+  </main>
+
 </body>
 </html>
