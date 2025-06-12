@@ -122,34 +122,48 @@
       color: #aaa;
     }
     @media (max-width: 768px) {
-      nav {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+      .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #f0f0f0;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-left: auto;
+    }
+      .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-      }
+        width: 100%;
+        margin-top: 1rem;
+    }
+      .nav-links a {
+        padding: 0.5rem 0;
+        margin-left: 0;
+    }
+      .nav-links.show {
+        display: flex;
+    }
       .hero {
         flex-direction: column;
-        align-items: center;
+        padding: 1rem;
         margin-left: 0;
-        padding: 2rem 1rem;
-      }
-      .hero h1 {
-        font-size: 2rem;
-        text-align: center;
-      }
+    }
       .hero-content {
-        max-width: 100%;
         text-align: center;
-      }
+        max-width: 100%;
+    }
       .hero-image img {
         width: 90%;
         height: auto;
-        margin-top: 1.5rem;
-      }
-      .hero p {
-        text-align: center;
-      }
+        margin: 1rem auto 0;
+    }
       .exp-button {
-        margin-top: 1rem;
+        margin: 1.5rem auto 0;
       }
     }
   </style>
@@ -159,7 +173,7 @@
     <strong>Akhila Gangadhara</strong>
     <div>
       <a href="#projects">My Work</a>
-      <a href="#experience">Experience</a>
+      <a href="#resume">resume</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
