@@ -11,12 +11,14 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Inter', sans-serif;
       background: #121212;
       color: #f0f0f0;
       line-height: 1.6;
     }
+
     nav {
       background: #1f1f1f;
       padding: 1.5rem 2rem;
@@ -27,86 +29,83 @@
       top: 0;
       z-index: 999;
     }
+
     nav a {
       color: #f0f0f0;
       text-decoration: none;
       margin-left: 2rem;
       font-weight: 500;
     }
+
     .hero {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
-      background-color: #121212;
-      min-height: 100vh;
-      gap: 3rem;
       padding: 0;
       margin-left: 4cm;
+      gap: 3rem;
+      flex-wrap: wrap;
     }
+
     .hero-content {
-      max-width: 680px;
-      margin: 0 auto;
-      text-align: left;
+      flex: 1;
+      max-width: 600px;
     }
+
     .hero h1 {
       font-size: 2.5rem;
       font-weight: 700;
     }
+
     .hero p {
       margin: 1rem 0;
       color: #cccccc;
     }
+
     .hero-image {
-      flex-shrink: 0;
-      margin-top: 2rem;
-      text-align: center;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
     .hero-image img {
-      width: 420px;
-      height: 600px;
-      object-fit: cover;
-      border-radius: 30px;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 20px;
     }
+
     .button-wrapper {
       margin-top: 2rem;
-      text-align: left;
     }
+
     .exp-button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
       background: #00b7ff;
       color: #121212;
+      padding: 0.8rem 1.6rem;
+      font-weight: 600;
       border: none;
       border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      text-align: center;
       text-decoration: underline;
+      font-size: 1rem;
+      display: inline-block;
     }
-    .experience-section {
-      display: none;
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #1f1f1f;
-      border-radius: 8px;
-      border: 1px solid #2a2a2a;
-    }
-    .experience-entry {
-      margin-bottom: 1.5rem;
-    }
+
     section {
       max-width: 1000px;
       margin: 4rem auto;
       padding: 0 2rem;
     }
+
     section h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       border-bottom: 2px solid #333;
       padding-bottom: 0.5rem;
     }
+
     .project-card {
       background: #1f1f1f;
       padding: 1.5rem;
@@ -114,70 +113,55 @@
       margin-bottom: 2rem;
       border: 1px solid #2a2a2a;
     }
+
     .project-card h3 {
       margin-bottom: 0.5rem;
     }
-    .project-card p, .project-card ul {
+
+    .project-card p,
+    .project-card ul {
       color: #ccc;
     }
+
     .contact a {
       color: #00b7ff;
       text-decoration: none;
       margin-right: 1rem;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
       background: #1f1f1f;
       color: #aaa;
     }
+
     @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-      .nav-toggle {
-        display: block;
-        background: none;
-        border: none;
-        color: #f0f0f0;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-left: auto;
-    }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-    }
-      .nav-links a {
-        padding: 0.5rem 0;
-        margin-left: 0;
-    }
-      .nav-links.show {
-        display: flex;
-    }
       .hero {
         flex-direction: column;
-        padding: 1rem;
-        margin-left: 0;
-    }
-      .hero-content {
+        align-items: center;
         text-align: center;
-        max-width: 100%;
-    }
+        padding: 2rem 1rem;
+      }
+
+      .hero-content,
+      .hero-image {
+        width: 100%;
+      }
+
       .hero-image img {
         width: 90%;
         height: auto;
         margin: 1rem auto 0;
-    }
-      .exp-button {
-        margin: 1.5rem auto 0;
+      }
+
+      .button-wrapper {
+        text-align: center;
       }
     }
   </style>
 </head>
+
 <body>
   <nav>
     <a href="index.html" style="text-decoration: none; color: #f0f0f0;"><strong>Akhila Gangadhara</strong></a>
@@ -199,6 +183,8 @@
       <div class="button-wrapper">
         <a href="experience.html" class="exp-button">View My Experience</a>
       </div>
+    </div>
+
     <div class="hero-image">
       <img src="https://i.postimg.cc/50Px0LK4/akhila.jpg" alt="Akhila Profile" />
     </div>
@@ -249,6 +235,5 @@
   <footer>
     <p>&copy; 2025 Akhila Gangadhara • Built with HTML & CSS</p>
   </footer>
-
 </body>
 </html>
